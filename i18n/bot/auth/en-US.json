@@ -3,30 +3,49 @@
     "setup": {
       "name": "setup",
       "description": "Setup authentication channel on server",
-      "option_1_name": "role",
-      "option_1_description": "Set a role to give users when they get verified",
-      "option_2_name": "log",
-      "option_2_description": "Set a log for users usage",
-      "option_3_name": "language",
-      "option_3_description": "Set a display language"
+      "options": [
+        {
+          "name": "role",
+          "description": "Set a role to give users when they get verified"
+        },
+        {
+          "name": "log",
+          "description": "Set a log for users usage"
+        },
+        {
+          "name": "language",
+          "description": "Set a display language"
+        }
+      ]
     }
   },
   "panel": {
-    "component_1": "Card ID",
-    "component_2": "Verify"
+    "components": ["Card ID"]
   },
   "card_id": {
     "title": "Card ID : %{guild_name}",
-    "field_1_name": "Details",
-    "field_1_value": "・**Name** : %{user_name}\n・**ID** : %{user_id}\n・**Email** : %{user_email}",
-    "field_2_name": "Account by XYOS",
-    "field_2_value": "・**Updated** : <t:%{updated}:R>\n・**Verified** : <t:%{verified}:f>"
+    "fields": [
+      {
+        "name": "Details",
+        "value": "・**Name** : %{user_name}\n・**ID** : %{user_id}\n・**Email** : %{user_email}"
+      },
+      {
+        "name": "Account by XYOS",
+        "value": "・**Updated** : <t:%{updated}:R>\n・**Verified** : <t:%{verified}:f>"
+      }
+    ]
   },
   "log": {
-    "field_1_name": "Action : %{action}",
-    "field_1_value": "・**User** : <@%{user_id}>\n・**ID** : %{user_id}",
-    "field_2_name": "Timestamp",
-    "field_2_value": "・**Date** : <t:%{unix}:f>\n・**Unix** : %{unix}",
+    "fields": [
+      {
+        "name": "Action : %{action}",
+        "value": "・**User** : <@%{user_id}>\n・**ID** : %{user_id}"
+      },
+      {
+        "name": "Timestamp",
+        "value": "・**Date** : <t:%{unix}:f>\n・**Unix** : %{unix}"
+      }
+    ],
     "footer": "Logger : Authentication・Latency : %{latency} second(s)"
   },
   "common": {
