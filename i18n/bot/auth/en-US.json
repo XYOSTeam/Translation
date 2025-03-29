@@ -49,8 +49,8 @@
     "footer": "Logger : Authentication・Latency : %{latency} second(s)"
   },
   "common": {
-    "wait": "**⏳ Please wait, your request is being processed...**",
-    "success": "**✅ Operation completed successfully**",
-    "error": "**❌ Operation failed**"
+    "wait": "<:utility_3:1355396255442010143> **Please wait, your request is being processed...**",
+    "success": "<:utility_1:1355396027179602101> **Operation completed successfully**",
+    "error": "<:utility_2:1355396240061497475> **Operation failed**"
   }
 }
