@@ -2,20 +2,11 @@
   "commands": [
     {
       "name": "setup",
-      "description": "Setup authentication channel on server",
+      "desc": "Setup authentication on server",
       "options": [
-        {
-          "name": "role",
-          "description": "Set a role to give users when they get verified"
-        },
-        {
-          "name": "log",
-          "description": "Set a log for users usage"
-        },
-        {
-          "name": "language",
-          "description": "Set a display language"
-        }
+        { "name": "role", "desc": "Set a role for users verified" },
+        { "name": "log", "desc": "Set a log for users usage" },
+        { "name": "language", "desc": "Set a display language" }
       ]
     }
   ],
@@ -49,8 +40,8 @@
     "footer": "Logger : Authentication・Latency : {{latency}} second(s)"
   },
   "common": {
-    "wait": "<:utility_3:1355396255442010143> **Please wait, your request is being processed...**",
     "success": "<:utility_1:1355396027179602101> **Operation completed successfully**",
-    "error": "<:utility_2:1355396240061497475> **Operation failed**"
+    "error": "<:utility_2:1355396240061497475> **Operation failed**",
+    "wait": "<:utility_3:1355396255442010143> **Please wait, your request is being processed...**"
   }
 }
