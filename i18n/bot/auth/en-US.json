@@ -1,6 +1,6 @@
 {
-  "commands": {
-    "setup": {
+  "commands": [
+    {
       "name": "setup",
       "description": "Setup authentication channel on server",
       "options": [
@@ -18,35 +18,35 @@
         }
       ]
     }
-  },
+  ],
   "panel": {
     "components": ["Card ID"]
   },
   "card_id": {
-    "title": "Card ID : %{guild_name}",
+    "title": "Card ID : {{guild_name}}",
     "fields": [
       {
         "name": "Details",
-        "value": "・**Name** : %{user_name}\n・**ID** : %{user_id}\n・**Email** : %{user_email}"
+        "value": "・**Name** : {{user_name}}\n・**ID** : {{user_id}}\n・**Email** : {{user_email}}"
       },
       {
         "name": "Account by XYOS",
-        "value": "・**Updated** : <t:%{updated}:R>\n・**Verified** : <t:%{verified}:f>"
+        "value": "・**Updated** : <t:{{updated}}:R>\n・**Verified** : <t:{{verified}}:f>"
       }
     ]
   },
   "log": {
     "fields": [
       {
-        "name": "Action : %{action}",
-        "value": "・**User** : <@%{user_id}>\n・**ID** : %{user_id}"
+        "name": "Action : {{action}}",
+        "value": "・**User** : <@{{user_id}}>\n・**ID** : {{user_id}}"
       },
       {
         "name": "Timestamp",
-        "value": "・**Date** : <t:%{unix}:f>\n・**Unix** : %{unix}"
+        "value": "・**Date** : <t:{{unix}}:f>\n・**Unix** : {{unix}}"
       }
     ],
-    "footer": "Logger : Authentication・Latency : %{latency} second(s)"
+    "footer": "Logger : Authentication・Latency : {{latency}} second(s)"
   },
   "common": {
     "wait": "<:utility_3:1355396255442010143> **Please wait, your request is being processed...**",
