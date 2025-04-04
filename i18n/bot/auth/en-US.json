@@ -1,7 +1,7 @@
 {
   "commands": [
     {
-      "name": "setup",
+      "name": "auth",
       "desc": "Setup authentication on server",
       "options": [
         { "name": "role", "desc": "Set a role for users verified" },
@@ -10,21 +10,21 @@
       ]
     }
   ],
-  "panel": {
-    "components": ["Card ID"]
-  },
-  "card_id": {
-    "title": "Card ID : {{guild_name}}",
-    "fields": [
-      {
-        "name": "Details",
-        "value": "・**Name** : {{user_name}}\n・**ID** : {{user_id}}\n・**Email** : {{user_email}}"
-      },
-      {
-        "name": "Account by XYOS",
-        "value": "・**Updated** : <t:{{updated}}:R>\n・**Verified** : <t:{{verified}}:f>"
-      }
-    ]
+  "auth": {
+    "panel": { "components": ["Card ID"] },
+    "card_id": {
+      "title": "Card ID : {{guild_name}}",
+      "fields": [
+        {
+          "name": "Details",
+          "value": "・**Name** : {{user_name}}\n・**ID** : {{user_id}}\n・**Email** : {{user_email}}"
+        },
+        {
+          "name": "Account by XYOS",
+          "value": "・**Updated** : <t:{{updated}}:R>\n・**Verified** : <t:{{verified}}:f>"
+        }
+      ]
+    }
   },
   "log": {
     "fields": [
@@ -40,8 +40,8 @@
     "footer": "Logger : Authentication・Latency : {{latency}} second(s)"
   },
   "common": {
-    "success": "<:utility_1:1355396027179602101> **Operation completed successfully**",
-    "error": "<:utility_2:1355396240061497475> **Operation failed**",
-    "wait": "<:utility_3:1355396255442010143> **Please wait, your request is being processed...**"
+    "success": "<:utility_1:1357577439680790579> **Operation completed successfully**",
+    "error": "<:utility_2:1357577448148963379> **Operation failed**",
+    "wait": "<:utility_3:1357577460123828274> **Please wait, your request is being processed...**"
   }
 }
