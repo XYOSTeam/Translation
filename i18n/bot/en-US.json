@@ -1,12 +1,16 @@
 {
   "commands": [
     {
+      "name": "language",
+      "desc": "Set bot display language",
+      "options": [{ "name": "language", "desc": "Set a display language" }]
+    },
+    {
       "name": "auth",
       "desc": "Setup authentication on server",
       "options": [
         { "name": "role", "desc": "Set a role for users verified" },
-        { "name": "log", "desc": "Set a log for users usage" },
-        { "name": "language", "desc": "Set a display language" }
+        { "name": "log", "desc": "Set a log for users usage" }
       ]
     }
   ],
