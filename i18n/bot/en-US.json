@@ -27,7 +27,8 @@
           "name": "Account by XYOS",
           "value": "・**Updated** : <t:{{updated}}:R>\n・**Verified** : <t:{{verified}}:f>"
         }
-      ]
+      ],
+      "components": ["Get Secret ID"]
     }
   },
   "log": {
