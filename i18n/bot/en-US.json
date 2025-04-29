@@ -22,10 +22,6 @@
         {
           "name": "Details",
           "value": "・**Name** : {{user_name}}\n・**ID** : {{user_id}}\n・**Email** : {{user_email}}"
-        },
-        {
-          "name": "Account by XYOS",
-          "value": "・**Updated** : <t:{{updated}}:R>\n・**Verified** : <t:{{verified}}:f>"
         }
       ],
       "components": ["Get Secret ID"]
@@ -35,14 +31,14 @@
     "fields": [
       {
         "name": "Action : {{action}}",
-        "value": "・**User** : <@{{user_id}}>\n・**ID** : {{user_id}}"
+        "value": "・**User** : <@!{{user_id}}>\n・**ID** : {{user_id}}"
       },
       {
         "name": "Timestamp",
         "value": "・**Date** : <t:{{unix}}:f>\n・**Unix** : {{unix}}"
       }
     ],
-    "footer": "Logger : Authentication・Latency : {{latency}} second(s)"
+    "footer": "Logger : Authentication・Latency : {{latency}} ms"
   },
   "common": {
     "success": "<:utility_1:1357577439680790579> **Operation completed successfully**",
